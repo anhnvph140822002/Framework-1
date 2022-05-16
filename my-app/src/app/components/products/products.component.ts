@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IProduct } from '../../models/product';
 
 @Component({
   selector: 'app-products',
@@ -6,10 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
+  @Input('data') productList!: IProduct[];
 
-  constructor() { }
+  productDeail!: IProduct; // undefined
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
+  onHandlerDelete(id: Number) {
+    this.productList = this.productList.filter(product => product.id !== id)
+  }
+  
+  onHandlerGetinfo(product: IProduct){
+    this.productDeail = product
+  }
+  
 }
+
