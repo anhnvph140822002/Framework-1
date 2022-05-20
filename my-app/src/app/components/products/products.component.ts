@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ProductService } from 'src/app/service/product.service';
 import { IProduct } from '../../models/product';
 
 @Component({
@@ -7,22 +8,21 @@ import { IProduct } from '../../models/product';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
-  @Input('data') productList!: IProduct[];
-
-  productDeail!: IProduct; // undefined
-  constructor() {
+  products!: IProduct[]
+  constructor(private productService: ProductService) { 
+    this.productService.getProductList().subscribe(data => {
+      // this.products = data
+    });
   }
 
   ngOnInit(): void {
   }
-
-  onHandlerDelete(id: Number) {
-    this.productList = this.productList.filter(product => product.id !== id)
-  }
-  
-  onHandlerGetinfo(product: IProduct){
-    this.productDeail = product
-  }
-  
+  // onHandleDelete(id: number) {
+  //   this.products = this.products.filter(product => product.id !== id);
+  // }
+  // onHandleGetInfo(product: IProduct) {
+  //   this.products = product;
+  //   console.log('product', product)
+  // }
 }
 

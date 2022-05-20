@@ -1,4 +1,5 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { IProduct } from '../../models/product';
 
 @Component({
   selector: 'app-product-add',
@@ -6,7 +7,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./product-add.component.css']
 })
 export class ProductAddComponent implements OnInit {
-  @Output() onAdd = new EventEmitter()
+  @Output() createProduct = new EventEmitter<{ name: string, price: number }>();
   product: { name: string, price: number } = {
     name: "",
     price: 0
@@ -16,9 +17,8 @@ export class ProductAddComponent implements OnInit {
   ngOnInit(): void {
   }
   onSubmit() {
-    console.log('submited')
-    console.log('this.product', this.product);
-    // Bắn dữ liệu lên app.component.ts
-    this.onAdd.emit(this.product)
+    console.log('submitted!')
+    console.log(this.product);
+    this.createProduct.emit(this.product);
   }
 }

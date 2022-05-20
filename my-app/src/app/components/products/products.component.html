@@ -20,15 +20,15 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let product of productList; let i= index">
+            <tr *ngFor="let product of products; let i= index">
                 <td>{{i + 1}}</td>
                 <td>{{product.name}}</td>
                 <td>{{product.price}}</td>
                 <td>{{product.status ? "Còn hàng":"Hết hàng"}}</td>
                 <td>
-                    <button class="btn - btn-danger" type="submit" (click)="onHandlerDelete(product.id)">xóa</button>
+                    <button class="btn - btn-danger">xóa</button>
                     <button class="btn - btn-info mg-1" type="submit"
-                        (click)="onHandlerGetinfo(product)">update</button>
+                        >detail</button>
                 </td>
             </tr>
 
@@ -37,4 +37,6 @@
 </body>
 
 </html>
+<!-- (click)="onHandleDelete(product.id)"
+(click)="onHandleGetInfo(product)" -->
 <router-outlet></router-outlet>
