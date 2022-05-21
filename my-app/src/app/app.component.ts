@@ -11,7 +11,7 @@ export class AppComponent {
   productList: IProduct[] = data;
 
   onHandleAdd(product: any) {
-    console.log(product);
+    // console.log(product);
     this.productList.push(product);
   }
 }

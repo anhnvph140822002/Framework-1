@@ -9,20 +9,30 @@ import { IProduct } from '../../models/product';
 })
 export class ProductsComponent implements OnInit {
   products!: IProduct[]
-  constructor(private productService: ProductService) { 
-    this.productService.getProductList().subscribe(data => {
-      // this.products = data
-    });
+  constructor(private productService: ProductService) {
+
   }
 
   ngOnInit(): void {
+    // chạy
+    this.getProductList();
+
   }
-  // onHandleDelete(id: number) {
-  //   this.products = this.products.filter(product => product.id !== id);
-  // }
+
+  // khai báo
+  getProductList() {
+    this.productService.getProductList().subscribe(data => {
+      this.products = data;
+    })
+  }
+  removeProduct(id: number) {
+    this.products = this.products.filter(product => product.id !== id);
+}
+  
+}
   // onHandleGetInfo(product: IProduct) {
   //   this.products = product;
   //   console.log('product', product)
   // }
-}
+
 
