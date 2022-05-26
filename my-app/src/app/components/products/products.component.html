@@ -9,9 +9,36 @@
 </head>
 
 <body>
-    <table class="table">
+    <nz-table #basicTable [nzData]="data">
         <thead>
+            <button><a href="product/add">Add</a></button>
             <tr>
+                <th>STT</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Address</th>
+                <th>Action</th>
+            </tr>
+        </thead> 
+        <tbody>
+            <tr *ngFor="let data of basicTable.data;  let i= index">
+                <td>{{i + 1}}</td>
+                <td>{{data.name}}</td>
+                <td>{{data.price}}</td>
+                <td>{{data.status ? "Còn hàng":"Hết hàng"}}</td>
+                <td>
+                    <button class="btn btn-danger" (click)="onremoveProduct(data.id!)">Delete </button>
+                    <button class="btn btn-info ms-1" >Update</button>
+                </td>
+            </tr>
+        </tbody>
+    </nz-table>
+    <!-- <table class="table">
+        <thead>
+            <button><a href="product/add">Add</a></button>
+            <tr>
+
+
                 <th scope="col">STT</th>
                 <th scope="col">Tên</th>
                 <th scope="col">giá</th>
@@ -26,17 +53,16 @@
                 <td>{{product.price}}</td>
                 <td>{{product.status ? "Còn hàng":"Hết hàng"}}</td>
                 <td>
-                    <button class="btn - btn-danger" >xóa</button>
-                    <button class="btn - btn-info mg-1" type="submit"
-                        >detail</button>
+                    <button class="btn btn-danger" (click)="onremoveProduct(product.id!)">
+                        Delete
+                    </button>
+                    <button class="btn btn-info ms-1">Update</button>
                 </td>
             </tr>
 
         </tbody>
-    </table>
+    </table> -->
 </body>
 
 </html>
-<!-- (click)="onHandleDelete(product.id)"
-(click)="onHandleGetInfo(product)" -->
 <router-outlet></router-outlet>

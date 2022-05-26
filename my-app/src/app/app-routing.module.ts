@@ -4,10 +4,14 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
 import { AboutComponent } from './pages/about/about.component';
 import { HelloComponent } from './components/hello/hello.component';
 import { ProductsComponent } from './components/products/products.component';
+import { ProductAddComponent } from './components/product-add/product-add.component';
 const routes: Routes = [
-  {path:"products", component: ProductsComponent},
+  { path: "", component: HelloComponent, pathMatch: 'full' },
+  { path:"product", component: ProductsComponent},
   { path: "about", component: AboutComponent },
-  {path: "product/id", component: ProductDetailComponent}
+  { path: "product/add", component: ProductAddComponent },
+  { path: "product/edit/:id", component: ProductAddComponent },
+  { path: "product/:id", component: ProductDetailComponent},
 ];
 
 @NgModule({

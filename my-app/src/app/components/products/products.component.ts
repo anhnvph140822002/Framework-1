@@ -8,7 +8,7 @@ import { IProduct } from '../../models/product';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
-  products!: IProduct[]
+  data!: IProduct[]
   constructor(private productService: ProductService) {
 
   }
@@ -22,13 +22,19 @@ export class ProductsComponent implements OnInit {
   // khai báo
   getProductList() {
     this.productService.getProductList().subscribe(data => {
-      this.products = data;
+      this.data = data;
     })
   }
-  removeProduct(id: number) {
-    this.products = this.products.filter(product => product.id !== id);
-}
+  onremoveProduct(id: number) {
+    this.productService.removeProduct(id).subscribe(() => {
+      this.data = this.data.filter(item => item.id !== id);
+    })
+  }
+  onupdateProduct (id:number){
+    
+  }
   
+
 }
   // onHandleGetInfo(product: IProduct) {
   //   this.products = product;

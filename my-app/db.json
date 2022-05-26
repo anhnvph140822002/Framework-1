@@ -1,7 +1,16 @@
 {
-    "products": [
-      { "id": 1, "name": "Product A", "price": 100, "status": true },
-      { "id": 2, "name": "Product B", "price": 200, "status": true },
-      { "id": 3, "name": "Product C", "price": 300, "status": true }
-    ]
-  }
+  "products": [
+    {
+      "name": "yêu em",
+      "price": 12121,
+      "status": true,
+      "id": 10
+    },
+    {
+      "name": "11112222",
+      "price": "0111",
+      "status": true,
+      "id": 11
+    }
+  ]
+}

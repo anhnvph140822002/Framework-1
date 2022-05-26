@@ -12,6 +12,14 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
 import { AboutComponent } from './components/about/about.component';
 import { HelloComponent } from './components/hello/hello.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NZ_I18N } from 'ng-zorro-antd/i18n';
+import { en_US } from 'ng-zorro-antd/i18n';
+import { registerLocaleData } from '@angular/common';
+import en from '@angular/common/locales/en';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NzTableModule } from 'ng-zorro-antd/table';
+import { NzFormModule } from 'ng-zorro-antd/form';
+registerLocaleData(en);
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,14 +30,18 @@ import { HttpClientModule } from '@angular/common/http';
     ProductDetailComponent,
     AboutComponent,
     HelloComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    NzTableModule,
+    NzFormModule
   ],
-  providers: [],
+  providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

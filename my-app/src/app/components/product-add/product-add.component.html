@@ -1,17 +1,23 @@
 <p>product-add works!</p>
 {{ product | json }}
-<form (ngSubmit)="onSubmit()" #formAdd="ngForm">
-    <input
-      type="text"
-      placeholder="Name"
-      [(ngModel)]="product.name"
-      name="name"
-    />
-    <input
-      type="number"
-      placeholder="Price"
-      [(ngModel)]="product.price"
-      name="price"
-    />
-    <button>Add</button>
-  </form>
+<!-- <form (ngSubmit)="onSubmit()" #formAdd="ngForm">
+  <input type="text" placeholder="Name" [(ngModel)]="product.name" name="name" />
+  <input type="number" placeholder="Price" [(ngModel)]="product.price" name="price" />
+  <button>Add</button>
+</form> -->
+<form nz-form (ngSubmit)="onSubmit()" #formAdd="ngForm">
+  <nz-form-item>
+    <nz-form-label [nzSpan]="1" type="text" name="name">E-mail</nz-form-label>
+    <nz-form-control [nzSpan]="1">
+      <input nz-input name="name" type="name" id="name" type="text"  [(ngModel)]="product.name"
+        name="name">
+    </nz-form-control>
+    <nz-form-label [nzSpan]="3" nzFor="email" type="number" name="price">
+      Giá</nz-form-label>
+    <nz-form-control [nzSpan]="3">
+      <input nz-input name="Price" type="Price" id="Price" type="number" placeholder="Nhập giá đê" [(ngModel)]="product.price"
+        name="price">
+    </nz-form-control>
+  </nz-form-item>
+  <button>Add</button>
+</form>
