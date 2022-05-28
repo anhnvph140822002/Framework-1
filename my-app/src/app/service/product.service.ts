@@ -7,7 +7,7 @@ import { IProduct } from '../models/product';
   providedIn: 'root'
 })
 export class ProductService {
-  API_URL = `http://localhost:3000/products/`
+  API_URL = `http://localhost:3000/products`
 
 
   constructor(

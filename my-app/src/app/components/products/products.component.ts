@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ProductService } from 'src/app/service/product.service';
+
 import { IProduct } from '../../models/product';
 
 @Component({
@@ -30,8 +31,10 @@ export class ProductsComponent implements OnInit {
       this.data = this.data.filter(item => item.id !== id);
     })
   }
-  onupdateProduct (id:number){
-    
+  onupdateProduct (product: IProduct){
+    this.productService.updateProduct(product).subscribe(() =>{
+      this.data = this.data.filter(item => item.id === product.id ? product : item);
+    })
   }
   
 

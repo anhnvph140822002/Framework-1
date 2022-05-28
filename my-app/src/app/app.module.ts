@@ -19,6 +19,9 @@ import en from '@angular/common/locales/en';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzFormModule } from 'ng-zorro-antd/form';
+import { NzMenuModule } from 'ng-zorro-antd/menu';
+import { ProductEditComponent } from './components/product-edit/product-edit.component';
+
 registerLocaleData(en);
 @NgModule({
   declarations: [
@@ -30,6 +33,7 @@ registerLocaleData(en);
     ProductDetailComponent,
     AboutComponent,
     HelloComponent,
+    ProductEditComponent,
     
   ],
   imports: [
@@ -39,7 +43,8 @@ registerLocaleData(en);
     HttpClientModule,
     BrowserAnimationsModule,
     NzTableModule,
-    NzFormModule
+    NzFormModule,
+    NzMenuModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

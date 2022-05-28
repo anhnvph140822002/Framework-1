@@ -3,6 +3,7 @@ import { IProduct } from '../../models/product';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ProductService } from 'src/app/service/product.service';
 
+
 @Component({
   selector: 'app-product-add',
   templateUrl: './product-add.component.html',
@@ -23,6 +24,8 @@ export class ProductAddComponent implements OnInit {
 
   ngOnInit(): void {
     const id = this.activatedRoute.snapshot.paramMap.get('id');
+    console.log(id);
+    
     if (id) {
       // nếu có id thì call service get product để lấy thông tin trả về form
       this.productService.getProduct(id).subscribe(data => this.product = data);
