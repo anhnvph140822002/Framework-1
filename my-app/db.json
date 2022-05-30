@@ -5,12 +5,6 @@
       "price": 12121,
       "status": true,
       "id": 10
-    },
-    {
-      "name": "11112222",
-      "price": "0111",
-      "status": true,
-      "id": 11
     }
   ]
 }
