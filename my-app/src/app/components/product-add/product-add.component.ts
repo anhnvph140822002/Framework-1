@@ -1,4 +1,5 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter  } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { IProduct } from '../../models/product';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ProductService } from 'src/app/service/product.service';

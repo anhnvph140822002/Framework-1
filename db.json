@@ -25,28 +25,16 @@
       "id": 13
     },
     {
+      "name": "gfggdg",
+      "price": 3124554565,
+      "status": true,
+      "id": 14
+    },
+    {
       "name": "2qewqwqe",
       "price": 11111111,
       "status": true,
       "id": 15
-    },
-    {
-      "name": "qqqq",
-      "price": "0212121",
-      "status": true,
-      "id": 16
-    },
-    {
-      "name": "",
-      "price": 0,
-      "status": true,
-      "id": 17
-    },
-    {
-      "name": " lamborghini",
-      "price": "03123",
-      "status": true,
-      "id": 18
     }
   ]
 }
