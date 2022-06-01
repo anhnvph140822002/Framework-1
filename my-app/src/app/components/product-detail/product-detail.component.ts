@@ -11,7 +11,7 @@ import data from 'src/app/data';
 })
 export class ProductDetailComponent implements OnInit {
   // @Input() product!: IProduct
-  product!: IProduct
+  data!: IProduct
   constructor(
     private router: ActivatedRoute,
     private ProductService: ProductService
@@ -19,7 +19,7 @@ export class ProductDetailComponent implements OnInit {
     const id = this.router.snapshot.paramMap.get('id');
     // this.product = this.ProductService.getProduct(id)!;
     this.ProductService.getProduct(id).subscribe((data) =>{
-      this.product = data
+      this.data = data
     })
   }
 
