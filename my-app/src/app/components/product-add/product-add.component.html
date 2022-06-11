@@ -72,8 +72,9 @@
 
               <label for="psw"><b>Price</b></label>
               <input nz-input name="Price" type="number"  [(ngModel)]="product.price" placeholder="Nhập giá đê" name="price" #price="ngModel">
-
-
+              <br>
+              <label for="uname"><b>subject</b></label>
+              <input type="text" [(ngModel)]="product.subject" name="subject" #subject="ngModel" >
               <button [disabled]="!addProduct.valid">ADĐ</button>
               {{addProduct.value | json}}
             </div>

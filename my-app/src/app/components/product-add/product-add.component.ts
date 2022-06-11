@@ -16,6 +16,7 @@ export class ProductAddComponent implements OnInit {
     name: "",
     price: 0,
     status: true,
+    subject:""
   }
   constructor(
     private productService: ProductService,

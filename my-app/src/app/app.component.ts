@@ -8,10 +8,5 @@ import { IProduct } from './models/product';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  productList: IProduct[] = data;
-
-  onHandleAdd(product: any) {
-    // console.log(product);
-    this.productList.push(product);
-  }
+ 
 }

@@ -327,9 +327,8 @@ input:focus{
     justify-content: space-between;
 }
 .small-img-rol{
-    flex-basis: 22%;
+    flex-basis: 24%;
     cursor: pointer;
-    margin-top: 10px;
 }
 /* -----------------cart item details------------------- - */
 .cart-page{
