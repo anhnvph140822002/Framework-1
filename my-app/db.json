@@ -1,14 +1,8 @@
 {
   "products": [
     {
-      "name": "yêu em",
-      "price": 12121,
-      "status": true,
-      "id": 10
-    },
-    {
       "name": "hí",
-      "price": 11111,
+      "price": "21213213123",
       "status": true,
       "id": 11
     },
@@ -47,6 +41,18 @@
       "price": "03123",
       "status": true,
       "id": 18
+    },
+    {
+      "name": "",
+      "price": 0,
+      "status": true,
+      "id": 19
+    },
+    {
+      "name": "fdfsdf",
+      "price": 312312,
+      "status": true,
+      "id": 20
     }
   ]
 }

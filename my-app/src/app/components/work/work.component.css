@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    background-color: white;
+    margin-bottom: 60px;
+
+}
+.header row{
+    margin-top: 70px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+ul li a:hover{
+    color: red;
+}
+
+
+.column{
+    height: 200px;
+    padding: 10px;
+    float: left;
+}
+.column1{
+    width: 25%;
+}
+.column2{
+    width: 75%;
+}
+.row2::after{
+    content: "";
+    clear: both;
+    display: table;
+}

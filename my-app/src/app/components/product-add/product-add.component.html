@@ -62,19 +62,23 @@
           <nz-breadcrumb-item>App</nz-breadcrumb-item>
         </nz-breadcrumb> -->
         <nz-content>
-          <form action="action_page.php" method="post" nz-form (ngSubmit)="onSubmit()" #formAdd="ngForm">
+          <form #addProduct="ngForm" action="" method="post" nz-form (ngSubmit)="onSubmit()" #formAdd="ngForm">
+            
             <div class="container">
               <label for="uname"><b>Name</b></label>
-              <input nz-input name="name" type="name" id="name" type="text" [(ngModel)]="product.name" name="name">
+              <input type="text" [(ngModel)]="product.name" name="name" #name="ngModel" required minlength="2">
+              <div *ngIf="name.errors?.['required']">name is required</div>
+              <div *ngIf="name.errors?.['minlength']">name minlength 2</div>
 
               <label for="psw"><b>Price</b></label>
-              <input nz-input name="Price" type="Price" id="Price" type="text" placeholder="Nhập giá đê"
-              [(ngModel)]="product.price" name="price">
+              <input nz-input name="Price" type="number"  [(ngModel)]="product.price" placeholder="Nhập giá đê" name="price" #price="ngModel">
 
-              <button type="">ADĐ</button>
+
+              <button [disabled]="!addProduct.valid">ADĐ</button>
+              {{addProduct.value | json}}
             </div>
           </form>
-          
+
         </nz-content>
       </nz-layout>
     </nz-layout>

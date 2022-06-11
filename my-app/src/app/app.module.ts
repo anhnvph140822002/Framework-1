@@ -25,6 +25,8 @@ import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzImageModule } from 'ng-zorro-antd/image';
 import { SigninComponent } from './components/signin/signin.component';
 import { SignupComponent } from './components/signup/signup.component';
+import { BlogComponent } from './components/blog/blog.component';
+import { WorkComponent } from './components/work/work.component';
 registerLocaleData(en);
 @NgModule({
   declarations: [
@@ -39,6 +41,8 @@ registerLocaleData(en);
     ProductEditComponent,
     SigninComponent,
     SignupComponent,
+    BlogComponent,
+    WorkComponent,
     
   ],
   imports: [
