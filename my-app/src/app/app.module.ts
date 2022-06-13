@@ -23,10 +23,10 @@ import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { ProductEditComponent } from './components/product-edit/product-edit.component';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzImageModule } from 'ng-zorro-antd/image';
-import { SigninComponent } from './components/signin/signin.component';
-import { SignupComponent } from './components/signup/signup.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { WorkComponent } from './components/work/work.component';
+import {SigninComponent} from './components/auth/signin/signin.component';
+import {SignupComponent} from './components/auth/signup/signup.component'
 registerLocaleData(en);
 @NgModule({
   declarations: [
@@ -39,11 +39,11 @@ registerLocaleData(en);
     AboutComponent,
     HelloComponent,
     ProductEditComponent,
-    SigninComponent,
-    SignupComponent,
     BlogComponent,
     WorkComponent,
-    
+    SigninComponent,
+    SignupComponent
+
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  {{user | json}}
+  <form (ngSubmit)="onSubmit()" #formAdd="ngForm" style="border:1px solid #ccc">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <hr>
+      <label for="email"><b>username</b></label>
+      <input type="text" placeholder="Enter username" id="" [(ngModel)]="user.username" name="username" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" id="" [(ngModel)]="user.email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" id="" [(ngModel)]="user.password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" id="" [(ngModel)]="user.password" name="psw-repeat" required>
+
+      <div class="clearfix">
+        <button type="login " class="sibtnlink">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>

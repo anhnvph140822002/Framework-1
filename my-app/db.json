@@ -11,15 +11,31 @@
       "name": "Chào các ông cháu p2",
       "price": 123456,
       "status": true,
-      "subject": "Xin là xin vĩnh biệt cụ",
+      "subject": "1 con vịt xòe ra 2 cái cánh",
       "id": 21
     },
     {
-      "name": "Mai thành đức",
+      "name": "Chào các ông cháu p3",
       "price": 12987,
       "status": true,
       "subject": "bà con ai đang gặp các vấn đề về xương khớp gọi cho tôi",
       "id": 22
+    }
+  ],
+  "users": [
+    {
+      "email": "anhnvph14082@fpt.edu.vn",
+      "password": "$2a$10$ygc/4e24FwjDMqPNCd1Pm.tQiEZz/3VJK9w0GvjBeLpnG9k9ZQWza",
+      "username": "vietanh08092002",
+      "role": 0,
+      "id": 1
+    },
+    {
+      "email": "long@fpt.edu.vn",
+      "password": "$2a$10$jGnTDjGO6T3RXwXfWjAFvuWDsSnD8isLe13oEOBPzyyMm3WVmoR9i",
+      "username": "vutienlong",
+      "role": 1,
+      "id": 2
     }
   ]
 }
