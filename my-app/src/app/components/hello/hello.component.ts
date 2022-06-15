@@ -10,14 +10,20 @@ import { ProductService } from 'src/app/service/product.service';
 export class HelloComponent implements OnInit {
   data!: IProduct[]
   @Input('data') myName: string = "";
-  username:string = JSON.parse(String(localStorage?.getItem("user"))).user.username;
+  username!:string ;
   constructor(private productService: ProductService) {
 
     //this.products = this.ProductService.getProductList()!;
   }
 
   ngOnInit(): void {
-    console.log(JSON.parse(String(localStorage?.getItem("user"))).user.username);
+    const user = JSON.parse(localStorage.getItem("user")!);
+    if (user) {
+      this.username = user.username
+
+    }
+    
+    // console.log(JSON.parse(String(localStorage?.getItem("user"))).user.username);
     this.getProductList();
   }
   getProductList() {
