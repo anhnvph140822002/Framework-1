@@ -20,7 +20,7 @@
         <!-- <a href="">Logo, You are {{username}}</a> -->
         <div class="flex justify-end items-center">
           <a href="">Welcome {{username}}</a>
-          <button ><a href="">Logout</a></button>
+          <button><a href="">Logout</a></button>
           <button id="btn-mobile" class="md:hidden">
             Mobile
           </button>
@@ -33,7 +33,6 @@
             <li><a href="signup">Signup</a></li>
             <li><a href="Blog">Blog</a></li>
             <li><a href="Work">Work</a></li>
-            <li><a href="">Account</a></li>
           </ul>
         </div>
 
@@ -48,15 +47,19 @@
             Hi, I am Vanh, Creative lamborghini
           </h2>
           <p class="banner-content__desc">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-            amet sint. Velit officia consequat duis enim velit mollit.
-            Exercitation veniam consequat sunt nostrud amet.
+            <b style="margin-bottom: 995px;">Lamborghini siêu xe hàng đầu thế giới</b>
+            <br>
+            <span>Lamborghini Aventador là một mẫu siêu xe thể thao cỡ trung của hãng xe ô tô danh tiếng Lamborghini từ
+              Ý. Lamborghini Aventador lần đầu tiên ra mắt vào năm 2011 tại triển lãm Geneva Motor Show. Đây được xem là
+              một phiên bản mới thay thế cho mẫu xe cũ Murcielago.</span>
+            <br>
+
           </p>
           <a href="" class="btn btn-danger banner-content__btn">Download Resume</a>
         </div>
         <div class="banner-picture">
           <img src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2019/6/10/738354/595097.jpg"
-            style="width: 243px; height: 243px;" alt="" class="banner-picture__thumb" />
+            style="width: 293px; height: 273px;" alt="" class="banner-picture__thumb" />
         </div>
       </div>
     </div>
@@ -72,7 +75,7 @@
         <div class="grid md:grid-cols-2 gap-8">
           <div class="recent-post__item">
             <h3 class="recent-post__title">
-              Making a design system from scratch
+              Lamborghini Aventador S
             </h3>
             <div class="recent-post__meta">
               <span>12 Feb 2020</span>
@@ -80,14 +83,14 @@
               <a href="">Design, Pattern</a>
             </div>
             <p class="recent-post__desc">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
+              Về giá Lamborghini Aventador cũ, tuỳ theo phiên bản (loại xe) cũng như tình trạng mà giá xe Aventador cũ
+              có sự chênh lệch khác nhau. Tuy nhiên, trong các kỳ mua bán xe Lamborghini Aventador đã qua sử dụng gần
+              đây, hầu như xe Aventador cũ thường có giá bán tầm trên 15 tỷ đồng.
             </p>
           </div>
           <div class="recent-post__item">
             <h3 class="recent-post__title">
-              Making a design system from scratch
+              Lamborghini Aventador SVJ
             </h3>
             <div class="recent-post__meta">
               <span>12 Feb 2020</span>
@@ -95,9 +98,9 @@
               <a href="">Design, Pattern</a>
             </div>
             <p class="recent-post__desc">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
+              Giá xe Lamborghini Aventador tại Việt Nam sẽ gấp khoảng 4 lần so với giá bán tại Mỹ bởi các loại thuế phí
+              khá cao như thuế nhập khẩu ô tô loại dung tích lớn (47 – 52%), thuế tiêu thụ đặc biệt (150%), thuế VAT
+              (10%), thuế trước bạ (10 – 12%)…
             </p>
           </div>
         </div>
@@ -106,16 +109,16 @@
   </section>
   <section class="projects">
     <div class="custom-container">
-      
+
       <nz-table #basicRow [nzData]="data">
-        <article class="px-44 : ">
+        <article class="px-30 : ">
           <div class="mt-3 :  ">
             <h1 style="margin-top:  20px; font-size: 23px; ">Featured works</h1>
             <div *ngFor="let data of basicRow.data ;" class=" grid grid-cols-3 : mt-5">
               <div>
                 <a routerLink="/product/{{data.id}}">
                   <img
-                    src="https://img2.thuthuatphanmem.vn/uploads/2018/12/31/hinh-dong-gau-truc-dang-yeu_112055407.gif"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Geneva_MotorShow_2013_-_Lamborghini_Veneno_1.jpg/1200px-Geneva_MotorShow_2013_-_Lamborghini_Veneno_1.jpg"
                     alt="" width="270"
                     style="border-radius: 10px ;  box-shadow: 0 4px 8px 0 rgba(51, 51, 51, 0.2), 0 6px 20px 0 rgba(68, 67, 67, 0.19);">
                 </a>
@@ -146,41 +149,42 @@
   </section>
   <div class="footer">
     <div class="container">
-        <div class="row">
-            <div class="footer-col-1">
-                <h3>Download Our App</h3>
-                <p>Download App for Android and ios mobile phone</p>
-                <div class="app-logo">
-                    <img src="https://admin.worldwaterweek.org/wp-content/uploads/2019/08/app_store_badge_-342x114.png">
-                    <img src="https://www.informatique-mania.com/wp-content/uploads/2020/12/Logo-app-Instalcion-Google-Play-Store.png">
-                </div>
-            </div>
-            <div class="footer-col-2">
-                <p>Our Purpose Is To Sustainably Make the Pleasure and
-                    Benefits of Sports Accessible to the Many</p>
-            </div>
-            <div class="footer-col-3">
-                <h3>Useful Links</h3>
-                <ul>
-                    <li>Coupons</li>
-                    <li>Blog Post</li>
-                    <li>Return Policy</li>
-                    <li>Join Affiliate</li>
-                </ul>
-            </div>
-            <div class="footer-col-4">
-                <h3>Follow us</h3>
-                <ul>
-                    <li>Facebook</li>
-                    <li>Twitter</li>
-                    <li>Instagram</li>
-                    <li>Youtube </li>
-                </ul>
-            </div>
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Download Our App</h3>
+          <p>Download App for Android and ios mobile phone</p>
+          <div class="app-logo">
+            <img src="https://admin.worldwaterweek.org/wp-content/uploads/2019/08/app_store_badge_-342x114.png">
+            <img
+              src="https://www.informatique-mania.com/wp-content/uploads/2020/12/Logo-app-Instalcion-Google-Play-Store.png">
+          </div>
         </div>
-        <hr>
+        <div class="footer-col-2">
+          <p>Our Purpose Is To Sustainably Make the Pleasure and
+            Benefits of Sports Accessible to the Many</p>
+        </div>
+        <div class="footer-col-3">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>Coupons</li>
+            <li>Blog Post</li>
+            <li>Return Policy</li>
+            <li>Join Affiliate</li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3>Follow us</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>Youtube </li>
+          </ul>
+        </div>
+      </div>
+      <hr>
     </div>
-</div>
+  </div>
 </body>
 
 </html>

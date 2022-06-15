@@ -1,25 +1,46 @@
 {
   "products": [
     {
-      "name": "Chào các ông cháu p1",
-      "price": 500,
+      "name": "Lamborghini Aventador S",
+      "price": 7300000000,
       "status": true,
       "id": 20,
-      "subject": "đau lưng mỏi gối tê tay có ngay tâm bình"
+      "subject": "Aventador S LP740-4 chính là chiếc siêu xe Lamborghini có giá bán cao nhất tại nước ta, giá xe Lamborghini Aventador S LP740-4 ở Việt Nam còn cao hơn rất nhiều so với các nước Đông Nam Á khác như Singapore, Thái Lan, Malaysia, thậm chí là cao gấp 3 lần giá siêu xe Lamborghini Aventador S LP740-4 trên thế giới.         Giá xe Lamborghini Aventador S LP740-4 2022 mới nhất tại Việt Nam ở khoảng 40 tỷ đồng."
     },
     {
-      "name": "Chào các ông cháu p2",
-      "price": 123456,
+      "name": "Lamborghini Aventador SVJ",
+      "price": 12000000000,
       "status": true,
-      "subject": "1 con vịt xòe ra 2 cái cánh",
+      "subject": "Chiếc siêu xe Lamborghini Aventador SVJ đầu tiên về Việt Nam vào cuối tháng 7 năm 2019, xe được nhập khẩu không chính hãng nên thông tin về giá xe Lamborghini Aventador phiên bản LP770-4 SVJ tại dải đất hình chữ S vẫn còn là một bí mật. Chỉ biết rằng, tại thị trường Mỹ, giá xe Lamborghini Aventador LP770-4 SVJ được bán ra ở mức 517.700 đô la, tương đương 12 tỷ đồng.",
       "id": 21
     },
     {
-      "name": "Chào các ông cháu p3",
+      "name": "Lamborghini Urus",
       "price": 12987,
       "status": true,
-      "subject": "bà con ai đang gặp các vấn đề về xương khớp gọi cho tôi",
+      "subject": "Lamborghini chính thức trình làng chiếc siêu SUV Urus năm 2018, mẫu xe sành điệu này sau đó đã trở thành \"gà đẻ trứng vàng\" cho hãng siêu xe Ý. Đã có hơn 6.700 chiếc Lamborghini Urus được bán ra chỉ trong 2 năm 2018 và 2019. Riêng thị trường Việt Nam hiện nay đã có 14 chiếc.Giá xe Lamborghini Urus lúc mới ra mắt khoảng 222.000 USD, tương đương 5,2 tỷ đồng.",
       "id": 22
+    },
+    {
+      "name": "Lamborghini Huracan LP610-4",
+      "price": 24438380700,
+      "status": true,
+      "subject": "Ngay sau khi khai tử Lamborghini Gallardo, hãng siêu xe Ý bắt đầu cuộc chơi mới với Lamborghini Huracan LP610-4, mẫu xe này được trình làng lần đầu tiên tại triển lãm Geneva Auto Show vào tháng 3 năm 2014. Tổng số xe Lamborghini Huracan bán được trên thị trường trong vòng 5 năm đầu tiên đạt 14.022 xe, nhiều hơn tất cả dòng xe Lamborghini nào đã ghi dấu ấn trước đó.",
+      "id": 23
+    },
+    {
+      "name": "Lamborghini Sesto Elemento",
+      "price": 100000000000,
+      "status": true,
+      "subject": "Lamborghini Sesto Elemento là mẫu siêu xe đỉnh cao chỉ được sản xuất đúng 20 chiếc trên toàn thế giới và đi kèm mức giá bán chính hãng khoảng 2,2 triệu đô la. Cũng chính vì thế mà rất nhiều nhà sưu tập trên toàn thế giới quyết tâm chi ra số tiền cao hơn mức giá xuất xưởng để có sự phục vụ của \"siêu bò\" cực hiếm và đắt đỏ này.",
+      "id": 24
+    },
+    {
+      "name": "Lamborghini centenario",
+      "price": 100000000000,
+      "status": true,
+      "subject": "Centenario Roadster có khả năng đạt vận tốc 100 km/h chỉ trong 2,8 giây và tốc độ tối đa được giới hạn ở mức 350 km/h. Khi được ra mắt vào cuối năm 2017 tại sự kiện Pebble Beach Concours d'Elegant tại Mỹ, Lamborghini công bố giá bán của Centenario khi đó chỉ 1,9 triệu USD",
+      "id": 25
     }
   ],
   "users": [
